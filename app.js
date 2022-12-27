@@ -5,6 +5,7 @@ const cors = require('cors')
 const { response } = require('express')
 
 app.use(cors())
+app.use(express.static('public'))
 
 app.get('/', (request, response)=> {
     response.sendFile('/home/tiagolinux/meuPortifolio/index.html')
