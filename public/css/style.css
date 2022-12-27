@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box; /*Determina o tamanho total independente do padding e border*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+	padding: 0;
+}
+
+:root {
+    --widthGrid: 60%;
+    --greenPartiner: #59cd32;
+}
+
+/* => Generico */
+.conteiner-grid{
+    width: var(--widthGrid);
+    margin: 0 auto;
+}
+
+/* => Menu nav */
+nav {
+    /* border-bottom: 4px solid #999999; */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li {
+    display: inline;
+    font-size: 13px;
+}
+nav a {
+    text-decoration: none;
+    color: var(--greenPartiner);
+    font-weight: bold;
+}
+.link-active {
+    background-color: var(--greenPartiner);
+    padding: 6px 28px;
+    color: white;
+    border-radius: 15px;
+}
+
+/* => Home */
+.home {
+    height: fit-content;
+    padding-top: 120px;
+}
+hr {
+    border: 1px solid var(--greenPartiner);
+    position: relative;
+    top: 50%;
+    z-index: -1;
+}
+.foto-perfil {
+    height: 170px;
+    
+}
+.foto-perfil img{
+    width: 150px;
+    border-radius: 50%;
+    position: relative;
+    left: 44%;
+}
+.presentation {
+    background-image: url('/img/background_presentation.jpg');
+    background-size: 100%;
+    height: 350px;
+    margin-top: 100px;
+    
+}
+.presentation p {
+    color: white;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px; */
+    font-size: 30px;
+    text-align: center;
+}
+.presentation .container-greeting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+}
+.presentation .greeting {
+    font-size: 35px;
+    height: inherit;
+}
+.container-contatos-redesSociais {
+    display: flex;
+    justify-content: space-between;
+    width: var(--widthGrid);
+    margin: 0 auto;
+}
+.container-contatos-redesSociais div {
+    margin-bottom: 8px;
+}
+.container-contatos-redesSociais i {
+    font-size: 25px;
+    color: var(--greenPartiner);
+    margin-right: 5px;
+}
+.contatos {
+    display: flex;
+    flex-direction: column;
+}
+.contatos p {
+    margin-bottom: 8px;
+}
+.conteiner-contactMe {
+    display: flex;
+    align-items: center;
+}
+.container-redes-sociais {
+    display: flex;
+    flex-direction: column;
+}
+.redes-sociais {
+    display: flex;
+    align-items: center;
+}
