@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
+<body class="fadeIn">
     <nav>
         <div class="conteiner-grid">
             <ul>
@@ -20,15 +20,26 @@
 
         </div>
     </nav>
+    
+    
+
     <div class="home">
+        <div class="presentation">
+            <div class="conteiner-grid container-greeting">
+                <p id="presentation-text">
+                    <span class="greeting"> Olá, meu nome é <span class="myName">Tiago</span>!</span><br><br>                
+                    Sou desenvolvedor Full stack e um apaixonado<br>                 
+                    por fazer as coisas funcionarem bem.
+                </p>
+            </div>        
+        </div>
         <div class="foto-perfil">
-            <hr>
             <img src="/img/perfil.jpg" alt="foto de perfil">
         </div>
         <div class="container-contatos-redesSociais">
-            <div class="contatos">
+            <div id="contatiner-contatos" class="container-contatos">
                 <p>Tiago Moreira</p>
-                <p>40 anos</p>
+                <p>São Paulo-SP, Brasil</p>
                 <div class="conteiner-contactMe">
                     <i class="fa-solid fa-envelope"></i>
                     tsm_projetos@hotmail.com
@@ -39,7 +50,7 @@
                 </div>
 
             </div>
-            <div class="container-redes-sociais">
+            <div id="container-redesSociais" class="container-redesSociais">
                 <div class="redes-sociais">
                     <i class="fa-brands fa-github"></i>
                     Github
@@ -56,22 +67,12 @@
                     <i class="fa-brands fa-facebook"></i>
                     Facebook
                 </div>
-
             </div>
 
-        </div>
-        <div class="presentation">
-            <div class="conteiner-grid container-greeting">
-                <p>
-                    <span class="greeting"> Olá, meu nome é Tiago!</span><br><br>                
-                    Sou desenvolvedor Full stack e um apaixonado<br>                 
-                    por fazer as coisas funcionarem bem.
-                </p>
-            </div>
         </div>
     </div>
-
     <script src="https://kit.fontawesome.com/b7e3a8e02c.js" crossorigin="anonymous"></script>
+    <script src="/js/animationHome.js"></script>
     
 </body>
 </html>
