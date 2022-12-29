@@ -52,19 +52,25 @@ nav a {
     text-decoration: none;
     color: var(--greenPartiner);
     font-weight: bold;
-}
-.link-active {
-    background-color: var(--greenPartiner);
     padding: 6px 28px;
-    color: white;
     border-radius: 15px;
+    transition: background-color 0.5s , color 0.5s;
+}
+nav a:hover {
+    background-color: var(--greenPartiner);
+    color: white;
+}
+.btn-nav-active {
+    background-color: var(--greenPartiner);
+    /* padding: 6px 28px; */
+    color: white;
+    /* border-radius: 15px; */
 }
 
 /* => Home */
 .home {
     height: fit-content;
     border-bottom: 2px solid var(--greenPartiner);
-    margin-bottom: 500px;
 }
 .foto-perfil {
     height: 55px;
@@ -167,4 +173,28 @@ nav a {
 .redes-sociais {
     display: flex;
     align-items: center;
+}
+
+/* => Skills */
+.container-skills {
+    height: 500px;
+    background-color: blueviolet;
+}
+
+/* => Diferenciais */
+.container-advantages {
+    height: 400px;
+    background-color: yellow;
+}
+
+/* => Portfolio */
+.container-portfolio {
+    height: 700px;
+    background-color: lightblue;
+}
+
+/* => Footer */
+footer {
+    height: 250px;
+    background-color: dimgray;
 }

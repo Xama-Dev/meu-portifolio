@@ -9,21 +9,19 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body class="fadeIn">
-    <nav>
+    <nav id="nav">
         <div class="conteiner-grid">
             <ul>
-                <li><a class="link-active" href="http://">Home</a></li>
-                <li><a href="http://">Skills</a></li>
-                <li><a href="http://">Diferencias</a></li>
-                <li><a href="http://">Portifólio</a></li>
+                <li><a class="btn-nav-active" href="#container-home" onclick="linkNavActive(this)">Home</a></li>
+                <li><a href="#container-skills" onclick="linkNavActive(this)">Skills</a></li>
+                <li><a href="#container-advantages" onclick="linkNavActive(this)">Diferencias</a></li>
+                <li><a href="#container-portfolio" onclick="linkNavActive(this)">Portifólio</a></li>
             </ul>
 
         </div>
-    </nav>
-    
-    
+    </nav>       
 
-    <div class="home">
+    <div id="container-home" class="home">
         <div class="presentation">
             <div class="conteiner-grid container-greeting">
                 <p id="presentation-text">
@@ -71,8 +69,21 @@
 
         </div>
     </div>
+    <div id="container-skills" class="container-skills">
+
+    </div>    
+    <div id="container-advantages" class="container-advantages">
+
+    </div>
+    <div id="container-portfolio" class="container-portfolio">
+
+    </div>
+    <footer>
+        
+    </footer>
     <script src="https://kit.fontawesome.com/b7e3a8e02c.js" crossorigin="anonymous"></script>
     <script src="/js/animationHome.js"></script>
+    <script src="/js/menuNav.js"></script>
     
 </body>
 </html>
