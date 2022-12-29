@@ -12,16 +12,31 @@
     <nav id="nav">
         <div class="conteiner-grid">
             <ul>
-                <li><a class="btn-nav-active" href="#container-home" onclick="linkNavActive(this)">Home</a></li>
-                <li><a href="#container-skills" onclick="linkNavActive(this)">Skills</a></li>
-                <li><a href="#container-advantages" onclick="linkNavActive(this)">Diferencias</a></li>
-                <li><a href="#container-portfolio" onclick="linkNavActive(this)">Portifólio</a></li>
+                <li>
+                    <a id="btn-nav-presentation" class="btn-nav-active" href="#container-presentation" onclick="linkNavActive(this)">
+                        Apresentação
+                    </a>
+                </li>
+                <li>
+                    <a id="btn-nav-skills" href="#container-skills" onclick="linkNavActive(this)">
+                        Skills
+                    </a>
+                </li>
+                <li>
+                    <a id="btn-nav-advantages" href="#container-advantages" onclick="linkNavActive(this)">
+                        Diferencias
+                    </a>
+                </li>
+                <li>
+                    <a id="btn-nav-portfolio" href="#container-portfolio" onclick="linkNavActive(this)">
+                        Portifólio
+                    </a>
+                </li>
             </ul>
 
         </div>
-    </nav>       
-    <!-- <hr id="divider-nav-contianerHome"> -->
-    <div id="container-home" class="home">
+    </nav>  
+    <div id="container-presentation" class="container-presentation">
         <div class="presentation">
             <div class="conteiner-grid container-greeting">
                 <p id="presentation-text">
@@ -82,7 +97,7 @@
 
     </footer>
     <script src="https://kit.fontawesome.com/b7e3a8e02c.js" crossorigin="anonymous"></script>
-    <script src="/js/animationHome.js"></script>
+    <script src="/js/animationPresentation.js"></script>
     <script src="/js/menuNav.js"></script>
     
 </body>

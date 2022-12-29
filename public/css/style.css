@@ -72,12 +72,12 @@ nav a:hover {
     /* border-radius: 15px; */
 }
 
-/* => Home */
-/* #divider-nav-contianerHome {
+/* => Presentation */
+/* #divider-nav-contianerPresentation {
     height: 60px;
     background-color: red;
 } */
-.home {
+.container-presentation {
     height: fit-content;
     border-bottom: 2px solid var(--greenPartiner);
     scroll-margin-top: 60px;
