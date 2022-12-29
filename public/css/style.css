@@ -21,6 +21,10 @@
          opacity: 1;
      }
  }
+ html {
+    
+    scroll-behavior: smooth;
+ }
 
 /* => Generico */
 .conteiner-grid{
@@ -36,6 +40,7 @@ nav {
     z-index: 1;
     background-color: white;
     height: 60px;
+    width: 100%;
     display: flex;
     align-items: center;
 }
@@ -68,9 +73,16 @@ nav a:hover {
 }
 
 /* => Home */
+/* #divider-nav-contianerHome {
+    height: 60px;
+    background-color: red;
+} */
 .home {
     height: fit-content;
     border-bottom: 2px solid var(--greenPartiner);
+    scroll-margin-top: 60px;
+    scroll-behavior: smooth;
+
 }
 .foto-perfil {
     height: 55px;
@@ -179,18 +191,21 @@ nav a:hover {
 .container-skills {
     height: 500px;
     background-color: blueviolet;
+    scroll-margin-top: 60px;
 }
 
 /* => Diferenciais */
 .container-advantages {
     height: 400px;
     background-color: yellow;
+    scroll-margin-top: 60px;
 }
 
 /* => Portfolio */
 .container-portfolio {
     height: 700px;
     background-color: lightblue;
+    scroll-margin-top: 60px;
 }
 
 /* => Footer */
