@@ -28,3 +28,36 @@ linkWhatsApp.addEventListener('mouseout', () => {
     iconWhatsApp.classList.remove('icon-inflate')
     tagWhatsApp.setAttribute('style', 'font-size: 17px')
 })
+
+function copyEmail () {
+    let containerEmail = document.getElementById('container-email')
+    let toolTipCopy = document.getElementById('toolTip-copy')
+    let toolTipCopied = document.getElementById('toolTip-copied')
+
+    containerEmail.addEventListener('mouseover', () => {
+        toolTipCopy.classList.add('showContent')
+        // console.log(event.target)
+    })
+    containerEmail.addEventListener('mouseout', () => {
+        toolTipCopy.classList.remove('showContent')
+    })
+
+    containerEmail.addEventListener('click', () => {
+        let email = document.getElementById('input-myEmail').value
+        
+        navigator.clipboard.writeText(email)  
+        
+        toolTipCopy.classList.remove('showContent')
+        toolTipCopied.classList.add('showContent')
+
+        setTimeout(()=> {
+            toolTipCopied.classList.remove('showContent')
+
+        }, 1200)
+        containerEmail.addEventListener('mouseover', () => {
+            toolTipCopy.classList.add('showContent')
+        })
+    })
+}
+
+copyEmail()

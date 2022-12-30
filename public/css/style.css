@@ -6,8 +6,8 @@
 }
 :root {
     --widthGrid: 60%;
-    --greenPartiner: #00cc00;
-    /* #59cd32 */
+    --greenPartiner: #99cc00;
+    /* #00cc00 #9acd32*/
 }
 .fadeIn {
     animation: fadeIn 1.5s; 
@@ -30,6 +30,13 @@
 .conteiner-grid{
     width: var(--widthGrid);
     margin: 0 auto;
+}
+.display-element {
+    display: flex !important;
+    /* opacity: 1 !important; */
+}
+.showContent {
+    opacity: 1 !important;
 }
 
 /* => Menu nav */
@@ -103,9 +110,6 @@ nav a:hover {
     transition: opacity 3s;
     transition-delay: 1.2s;
 }
-.showContent {
-    opacity: 1 !important;
-}
 .presentation .myName {
     border-bottom: 5px solid white;
     display: inline-block;
@@ -142,8 +146,8 @@ nav a:hover {
     height: 250px;
 }
 .container-contatos-redesSociais div {
-    margin-bottom: 8px;    
-    width: 170px;
+    margin-bottom: 8px; 
+    
 }
 .container-contatos-redesSociais i {
     font-size: 25px;
@@ -161,7 +165,7 @@ nav a:hover {
     float: left;
     opacity: 0;
     transition: opacity 3s, margin-left 1.5s;
-    transition-delay: 2s, 2s;
+    transition-delay: 2s, 2s;    
 }
 .container-contatos p {
     margin-bottom: 8px;
@@ -172,6 +176,58 @@ nav a:hover {
     width: fit-content;
     text-decoration: none;
     color: black;
+}
+#container-email {
+    cursor: pointer;
+}
+.container-contatos #input-myEmail {
+    border: none;
+    font-size: 17px;
+    color: black;
+    background-color: white;
+    width: 250px;
+    cursor: pointer;
+}
+.container-contatos #input-myEmail:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+#toolTip-copy {
+    display: flex;
+    opacity: 0;
+    background-image: url('/img/tool-tip-invertida-branco.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105px;
+    height: 67px;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 10px;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 78px;
+    margin-left: 195px;
+    transition: opacity 0.5s;
+}
+#toolTip-copied {
+    display: flex;
+    opacity: 0;
+    background-image: url('/img/tool-tipCopied-invertida-branco.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 80px;
+    height: 67px;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 10px;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 78px;
+    margin-left: 235px;
+    transition: opacity 0.5s;
 }
 .conteiner-contactMe {
     display: flex;
@@ -184,6 +240,7 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     float: right;
+    width: 170px;
     opacity: 0;
     transition: opacity 3s, margin-right 1.5s;
     transition-delay: 2s, 2s;
