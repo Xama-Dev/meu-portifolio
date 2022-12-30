@@ -34,7 +34,7 @@
 
 /* => Menu nav */
 nav {
-    /* border-bottom: 4px solid #999999; */
+    /* border-bottom: 2px solid var(--greenPartiner); */
     position: sticky;
     top: 0;
     z-index: 1;
@@ -67,9 +67,7 @@ nav a:hover {
 }
 .btn-nav-active {
     background-color: var(--greenPartiner);
-    /* padding: 6px 28px; */
     color: white;
-    /* border-radius: 15px; */
 }
 
 /* => Presentation */
@@ -118,9 +116,6 @@ nav a:hover {
     animation-name: blinkUnderline;
     animation-iteration-count: infinite;
     animation-delay: 3s;
-    /* animation-fill-mode: forwards;
-    transition: border-bottom 1s ease-out; */
-    /* animation-play-state: paused; */
 }
 @keyframes blinkUnderline {
     from {
@@ -128,7 +123,6 @@ nav a:hover {
     }
     to {
         border-bottom: thick;
-        /* border-bottom: 8px solid transparent; */
     }
 }
 .presentation .container-greeting {
@@ -161,10 +155,6 @@ nav a:hover {
     text-decoration: none;
     color: black;
 }
-
-/* .container-redesSociais a:hover {
-    transform: scale(1.1, 1.1);
-} */
 .container-contatos {
     display: flex;
     flex-direction: column;
@@ -176,9 +166,19 @@ nav a:hover {
 .container-contatos p {
     margin-bottom: 8px;
 }
+.container-contatos a {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    text-decoration: none;
+    color: black;
+}
 .conteiner-contactMe {
     display: flex;
     align-items: center;
+}
+.conteiner-contactMe .fa-square-whatsapp {
+    transition: transform 0.5s ease;
 }
 .container-redesSociais {
     display: flex;
@@ -191,15 +191,15 @@ nav a:hover {
 .container-redesSociais i {    
     transition: transform 0.5s ease;
 }
-.icon-socialMedia-inflate {
+#link-whatsApp span {
+    transition: font-size 0.5s ease;
+}
+.icon-inflate {
     transform: scale(1.2, 1.2);
 }
 .container-redesSociais span {
     transition: font-size 0.5s ease;
 }
-/* .name-socialMedia-retract {
-    transform: scale(0.95, 0.95);
-} */
 .redes-sociais a {
     display: flex;
     align-items: center;
