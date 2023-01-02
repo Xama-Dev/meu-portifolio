@@ -21,8 +21,7 @@
          opacity: 1;
      }
  }
- html {
-    
+ html {    
     scroll-behavior: smooth;
  }
 
@@ -264,18 +263,78 @@ nav a:hover {
 }
 
 /* => Skills */
-.container-skills {
-    height: 500px;
-    background-color: blueviolet;
+#section-skills {
+    height: 600px;
+    background-color: black;
+    
+}
+#container-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     scroll-margin-top: 60px;
+}
+.container-skills p {
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    width: 465px;
+    margin-top: 100px;
+}
+#conteiner-btnChangeSkills {
+    display: flex;
+    justify-content: space-around;
+    width: 360px;
+    margin-top: 80px;
+}
+#conteiner-btnChangeSkills button{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    font-weight: bold;
+    padding: 6px 28px;
+    border-radius: 15px;
+    transition: background-color 0.5s , color 0.5s;
+    cursor: pointer;
+}
+#conteiner-btnChangeSkills button:hover {
+    background-color: white !important;
+    color: black !important;
+}
+.btnChangeSkills-active {
+    background-color: white !important;
+    color: black !important;
+
+}
+.container-skills-images {
+    position: absolute;
+    width: var(--widthGrid);
+    margin-top: 115px;
+    margin-top: 400px;
+}
+#container-frontEnd-skills {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+#container-backEnd-skills {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.img-row-skills {
+    display: flex;
+    justify-content: space-around;
+}
+.img-row-skills img {
+    width: 90px;
+    border-radius: 4px;
 }
 
 /* => Diferenciais */
 .container-advantages {
     height: 400px;
-    background-color: yellow;
     scroll-margin-top: 60px;
 }
+
 
 /* => Portfolio */
 .container-portfolio {
