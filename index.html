@@ -8,6 +8,9 @@
 
     <link rel="icon" href="/img/idea-icon 1.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/owlCarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/css/owlCarousel/owl.carousel.min.css">
+
 </head>
 <body class="fadeIn">
     <nav id="nav">
@@ -24,7 +27,7 @@
                     </a>
                 </li>
                 <li>
-                    <a id="btn-nav-advantages" href="#container-advantages" onclick="linkNavActive(this)">
+                    <a id="btn-nav-advantages" href="#section-advantages" onclick="linkNavActive(this)">
                         Diferencias
                     </a>
                 </li>
@@ -131,9 +134,17 @@
     
         </div>
     </section>
-    <div id="container-advantages" class="container-advantages">
-
-    </div>
+    <section id="section-advantages">
+        <div id="container-owlCarousel-advantages">
+            <div class="owl-carousel owl-theme">
+                <div class="container-advantage"></div>
+                <div class="container-advantage"></div>
+                <div class="container-advantage"></div>
+                <div class="container-advantage"></div>
+            </div>
+        </div>
+        
+    </section>
     <div id="container-portfolio" class="container-portfolio">
 
     </div>
@@ -145,6 +156,9 @@
     <script src="/js/menuNav.js"></script>
     <script src="/js/mouseHoverSocialMediaIcon.js"></script>
     <script src="/js/changeBoxSkillsImages.js"></script>
+    <script src="/js/owlCarousel/jQuery3.6.3.min.js"></script>
+    <script src="/js/owlCarousel/owl.carousel.min.js"></script>
+    <script src="/js/owlCarousel/owlCarouselController.js"></script>
     
 </body>
 </html>

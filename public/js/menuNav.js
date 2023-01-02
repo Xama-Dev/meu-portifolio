@@ -20,7 +20,7 @@ document.addEventListener('scroll', (event)=> {
     let containerSkillsPosition = document.getElementById('container-skills').getBoundingClientRect().y
     let btnNavSkills = document.getElementById('btn-nav-skills')
 
-    let containerAdvantagesPosition = document.getElementById('container-advantages').getBoundingClientRect().y
+    let containerAdvantagesPosition = document.getElementById('section-advantages').getBoundingClientRect().y
     let btnNavAdvantages = document.getElementById('btn-nav-advantages')
 
     let containerPortfolioPosition = document.getElementById('container-portfolio').getBoundingClientRect().y
