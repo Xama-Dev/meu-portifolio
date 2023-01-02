@@ -350,6 +350,23 @@ nav a:hover {
     margin-top: 50px;
     border-radius: 10px;
 }
+#container-owlCarousel-advantages .owl-nav {
+    margin-top: 28px;
+}
+#container-owlCarousel-advantages .owl-prev {    
+    position: absolute;
+    top: 130px;
+    left: -85px;
+    color: white;
+    font-size: 40px;    
+}
+#container-owlCarousel-advantages .owl-next {    
+    position: absolute;
+    top: 130px;
+    right: -85px;
+    color: white;
+    font-size: 40px;    
+}
 
 
 /* => Portfolio */
