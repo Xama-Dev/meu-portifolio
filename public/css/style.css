@@ -331,13 +331,12 @@ nav a:hover {
 
 /* => Diferenciais */
 #section-advantages {
-    height: 465px;
-    scroll-margin-top: 60px;
+    height: 464px;    
     background-color: #602060;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    scroll-margin-top: 60px;
 }
 #section-advantages h2 {
     color: white;
@@ -390,10 +389,83 @@ nav a:hover {
 
 
 /* => Portfolio */
-.container-portfolio {
-    height: 600px;
+#container-portfolio {
+    height: 550px;
     background-color: white;
-    scroll-margin-top: 60px;
+    scroll-margin-top: 60px;    
+}
+#container-portfolio h2 {
+    width: var(--widthGrid);
+    margin: 0 auto;
+    text-align: center;
+    padding: 45px 0;
+}
+#container-owlCarousel-portifolio {
+    width: 900px;
+    margin: 0 auto;
+    padding-top: 50px;
+    
+}
+#container-owlCarousel-portifolio .owl-nav {
+    position: absolute;
+    top: 95px;
+    width: 100%;
+}
+#container-owlCarousel-portifolio .owl-nav .owl-prev {
+    float: left;
+    font-size: 50px;
+    color: black;
+}
+#container-owlCarousel-portifolio .owl-nav .owl-next {
+    float: right;
+    font-size: 50px;
+    color: black;
+}
+.container-project {
+    display: flex;
+    padding: 0 85px;
+    margin-bottom: 50px;
+}
+.container-project video{
+    width: 500px;
+}
+.info-project {
+    margin-left: 30px;
+}
+.project-description {    
+    margin-top: 16px;
+}
+h4.hiring {
+    font-size: 13px;
+    color: var(--greenPartiner);
+}
+h3.project-name {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+p.text-description {
+    font-size: 13px;
+    text-align: justify;
+}
+.container-links-projects {
+    display: flex;
+    flex-direction: column;
+    margin-top: 38px;
+}
+.container-links-projects a {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: var(--greenPartiner);
+    color: white;
+    padding: 6px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    width: 180px;
+}
+.container-links-projects a:first-child {
+    margin-bottom: 10px;
 }
 
 /* => Footer */
