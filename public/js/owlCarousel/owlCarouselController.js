@@ -5,7 +5,10 @@ $(document).ready(function() {
         responsiveClass:false,
         nav: true,
         items: 1,
-        center: false
+        center: false,
+        autoplay: false,
+        autoplayHoverPause: true
+
         
     });
 });

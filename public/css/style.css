@@ -331,12 +331,20 @@ nav a:hover {
 
 /* => Diferenciais */
 #section-advantages {
-    height: 400px;
+    height: 465px;
     scroll-margin-top: 60px;
     background-color: #602060;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#section-advantages h2 {
+    color: white;
+    padding-top: 45px;
 }
 #container-owlCarousel-advantages {
-    width: 400px;
+    width: 500px;
     height: 100%;
     margin: 0 auto;
     display: flex;
@@ -347,8 +355,20 @@ nav a:hover {
     background-color: white;
     width: 100%;
     height: 220px;
+    padding: 0 20px;
     margin-top: 50px;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.container-advantage p {
+    font-size: 13px;
+    margin-top: 15px;
+}
+.container-advantage i {
+    color: #602060;
+    font-size: 60px;
+    margin-right: 28px;
 }
 #container-owlCarousel-advantages .owl-nav {
     margin-top: 28px;
