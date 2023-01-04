@@ -5,7 +5,7 @@
 	padding: 0;
 }
 :root {
-    --widthGrid: 60%;
+    --widthGrid: 1000px;
     --greenPartiner: #99cc00;
     /* #00cc00 #9acd32*/
 }
@@ -402,7 +402,7 @@ nav a:hover {
     padding: 45px 0;
 }
 #container-owlCarousel-portifolio {
-    width: 900px;
+    width: 1000px;
     margin: 0 auto;
     padding-top: 50px;
     
