@@ -297,8 +297,7 @@ nav a:hover {
     color: white;
     border: 2px solid white;
     font-weight: bold;
-    padding: 10px 50px;
-    border-radius: 20px;
+    padding: 10px 50px;    
     transition: background-color 0.5s , color 0.5s;
     cursor: pointer;
 }
@@ -515,4 +514,94 @@ p.text-description a {
 footer {
     height: 250px;
     background-color: #333333;
+    display: flex;
+    align-items: center;
+}
+.grid-footer {
+    width: var(--widthGrid);
+    display: flex;
+    margin: 0 auto;
+    
+}
+.grid-footer * {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+.grid-footer h3 {
+    font-size: 17px;
+}
+.grid-footer span {
+    width: 32px;
+    border-bottom: 2px solid var(--greenPartiner);
+    display: block;
+    margin-bottom: 32px;
+}
+.container-menuNav-footer {
+    /* background-color: rebeccapurple; */
+    width: 25%;
+}
+.container-menuNav-footer ul {
+    list-style: none;
+}
+.container-menuNav-footer a {
+    text-decoration: none;
+    font-size: 15px;
+    margin-bottom: 12px;
+    display: inline-block;
+}
+.container-redesSociais-footer {
+    /* background-color: lightgreen; */
+    width: 50%;
+    text-align: center;
+}
+.container-tag-redesSociais {
+    display: flex;
+    justify-content: space-around;
+
+}
+.container-icons-redesSociais {
+    display: flex;
+    justify-content: space-around;
+}
+.container-icons-redesSociais div {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.container-icons-redesSociais i {
+    font-size: 27px;
+}
+.container-icon-brain i {
+    color: var(--greenPartiner);
+    font-size: 35px;
+    margin-top: 45px;
+}
+.container-info-copyRigths {
+    margin-top: 10px;
+}
+.container-info-copyRigths p {
+    font-size: 13px;
+}
+.container-contato-footer {
+    /* background-color:lightsalmon; */
+    width: 25%;
+}
+.container-icons-contact {
+    display: flex;
+    flex-direction: column;
+}
+.container-icons-contact i {
+    font-size: 27px;
+    margin-right: 10px;
+}
+.container-icons-contact div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.container-icons-contact div p {
+    font-size: 15px;
+}
+.container-icons-contact a {
+    text-decoration: none;
 }
