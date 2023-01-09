@@ -296,6 +296,7 @@ nav a:hover {
     background-color: transparent;
     color: white;
     border: 2px solid white;
+    border-radius: 3px;
     font-weight: bold;
     padding: 10px 50px;    
     transition: background-color 0.5s , color 0.5s;
@@ -548,6 +549,9 @@ footer {
     font-size: 15px;
     margin-bottom: 12px;
     display: inline-block;
+}
+.wrap-container-central-footer {
+    width: fit-content;
 }
 .container-redesSociais-footer {
     /* background-color: lightgreen; */
