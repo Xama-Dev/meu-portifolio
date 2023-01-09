@@ -86,7 +86,7 @@ nav a:hover {
 
 }
 .foto-perfil {
-    height: 55px;
+    height: 0px;
     
 }
 .foto-perfil img{
@@ -139,11 +139,13 @@ nav a:hover {
     font-size: 35px;
     height: inherit;
 }
-.container-contatos-redesSociais {
-    
-    padding-bottom: 50px;
-    padding-top: 25px;
-    height: 250px;
+.container-contatos-redesSociais {        
+    height: 305px;
+    background-image: url('/img/background-contatos.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
 }
 .container-contatos-redesSociais div {
     margin-bottom: 8px; 
@@ -154,6 +156,11 @@ nav a:hover {
     color: var(--greenPartiner);
     margin-right: 5px;
     
+    
+}
+.wrap-contatos-resesSociais {
+    width: 100%;
+    font-weight: bold;
 }
 .container-redesSociais a {
     text-decoration: none;
@@ -166,6 +173,7 @@ nav a:hover {
     opacity: 0;
     transition: opacity 3s, margin-left 1.5s;
     transition-delay: 2s, 2s;    
+    background-color: white;
 }
 .container-contatos p {
     margin-bottom: 8px;
@@ -184,8 +192,9 @@ nav a:hover {
     border: none;
     font-size: 17px;
     color: black;
-    background-color: white;
-    width: 250px;
+    font-weight: bold;
+    background-color: transparent;
+    width: 280px;
     cursor: pointer;
 }
 .container-contatos #input-myEmail:focus{
@@ -244,6 +253,7 @@ nav a:hover {
     opacity: 0;
     transition: opacity 3s, margin-right 1.5s;
     transition-delay: 2s, 2s;
+    background-color: white;
 }
 .container-redesSociais i {    
     transition: transform 0.5s ease;
