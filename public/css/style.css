@@ -7,7 +7,7 @@
 :root {
     --widthGrid: 1000px;
     --greenPartiner: #99cc00;
-    /* #00cc00 #9acd32*/
+    /* #00cc00 #9acd32 #99cc00*/
     --grayPartiner: #666666;
 }
 .fadeIn {
@@ -33,10 +33,15 @@
 }
 .display-element {
     display: flex !important;
-    /* opacity: 1 !important; */
 }
 .showContent {
     opacity: 1 !important;
+}
+.display-none {
+    display: none;
+}
+.width-100Percent {
+    width: 100% !important;
 }
 
 /* => Menu nav */
@@ -405,16 +410,16 @@ nav a:hover {
 
 /* => Portfolio */
 #container-portfolio {
-    height: 695px;
+    height: fit-content;
     background-color: white;
     background-image: url('/img/portfolio-background.jpg');
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     scroll-margin-top: 60px;    
     border-top: 3px solid var(--greenPartiner);
 }
 #container-portfolio h2 {
-    width: var(--widthGrid);
+    width: 100%;
     margin: 0 auto;
     text-align: center;
     padding-top: 45px;
@@ -426,24 +431,24 @@ nav a:hover {
     padding-top: 50px;
     
 }
-#container-owlCarousel-portifolio .owl-nav {
+#container-owlCarousel-portifolio .owl-dots {
+    padding: 35px 0px;
+}
+.owl-nav-portfolio-style {
     position: absolute;
     top: 165px;
     width: 100%;
     height: 1px;
 }
-#container-owlCarousel-portifolio .owl-nav .owl-prev {
+.owl-prev-carouselPortfolio-style {
     float: left;
-    font-size: 65px;
-    color: var(--grayPartiner);
+    font-size: 65px !important;
+    color: var(--grayPartiner) !important;
 }
-#container-owlCarousel-portifolio .owl-nav .owl-next {
+.owl-next-carouselPortfolio-style {
     float: right;
-    font-size: 65px;
-    color: var(--grayPartiner);
-}
-#container-owlCarousel-portifolio .owl-dots {
-    margin-top: 30px;
+    font-size: 65px !important;
+    color: var(--grayPartiner) !important;
 }
 #container-owlCarousel-portifolio .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
     background: var(--greenPartiner) !important;
@@ -618,4 +623,25 @@ footer {
 }
 .container-icons-contact a {
     text-decoration: none;
+}
+
+/* responsiviness */
+.nav-style-screen940px {
+    font-size: 65px;
+    margin-top: 0px !important;
+    color: var(--greenPartiner);
+    display: flex;
+    background-color: black;
+}
+.buttonsNav-portfolio-screen940px {
+    width: 50%;
+}
+.responsive-displayColumn-carouselPortfolio {
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 40px !important;
+}
+.infoProject-style-screen940px {
+    width: 100%;
+    margin-left: 0px;    
 }
