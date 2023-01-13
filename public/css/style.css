@@ -40,6 +40,9 @@
 .display-none {
     display: none;
 }
+.marginBotton-8px {
+    margin-bottom: 8px;
+}
 
 /* => Menu nav */
 nav {
@@ -81,22 +84,24 @@ nav a:hover {
 
 /* => Presentation */
 .container-presentation {
-    height: fit-content;
+    height: 770px;
     border-bottom: 2px solid var(--greenPartiner);
     scroll-margin-top: 60px;
     scroll-behavior: smooth;
 
 }
 .foto-perfil {
-    height: 0px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
     
 }
 .foto-perfil img{
     width: 150px;
     border-radius: 50%;
     position: relative;
-    left: 44%;
     top: -67px;
+    z-index: 1;
 }
 .presentation {
     background-image: url('/img/background_presentation.jpg');
@@ -142,16 +147,14 @@ nav a:hover {
     height: inherit;
 }
 .container-contatos-redesSociais {        
-    height: 305px;
+    height: 420px;
     background-image: url('/img/background-contatos.jpg');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     display: flex;
     align-items: center;
-}
-.container-contatos-redesSociais div {
-    margin-bottom: 8px; 
-    
+    position: relative;
+    top: -150px;
 }
 .container-contatos-redesSociais i {
     font-size: 25px;
@@ -163,10 +166,6 @@ nav a:hover {
 .wrap-contatos-resesSociais {
     width: 100%;
     font-weight: bold;
-}
-.container-redesSociais a {
-    text-decoration: none;
-    color: black;
 }
 .container-contatos {
     display: flex;
@@ -187,9 +186,6 @@ nav a:hover {
     text-decoration: none;
     color: black;
 }
-#container-email {
-    cursor: pointer;
-}
 .container-contatos #input-myEmail {
     border: none;
     font-size: 17px;
@@ -203,6 +199,9 @@ nav a:hover {
     box-shadow: 0 0 0 0;
     border: 0 none;
     outline: 0;
+}
+#container-email {
+    cursor: pointer;
 }
 #toolTip-copy {
     display: flex;
@@ -257,14 +256,12 @@ nav a:hover {
     transition-delay: 2s, 2s;
     background-color: white;
 }
+.container-redesSociais a {
+    text-decoration: none;
+    color: black;
+}
 .container-redesSociais i {    
     transition: transform 0.5s ease;
-}
-#link-whatsApp span {
-    transition: font-size 0.5s ease;
-}
-.icon-inflate {
-    transform: scale(1.2, 1.2);
 }
 .container-redesSociais span {
     transition: font-size 0.5s ease;
@@ -273,6 +270,12 @@ nav a:hover {
     display: flex;
     align-items: center;
     width: fit-content;
+}
+#link-whatsApp span {
+    transition: font-size 0.5s ease;
+}
+.icon-inflate {
+    transform: scale(1.2, 1.2);
 }
 
 /* => Skills */
@@ -676,4 +679,103 @@ footer {
 }
 .resposive-text-greeting-skills-section {
     text-align: center;
+}
+
+/* => Presentation Section */
+.container-presentation-height-responsive-780px {
+    height: 829px;
+}
+.text-presentation-resposive-fontSize-780px {
+    font-size: 19px !important;
+}
+.container-contact-marginLeft-responsive-1040px {
+    margin-left: 10% !important;
+}
+.container-socialMedia-marginRight-responsive-1040px {
+    margin-right: 10% !important;
+}
+.displayFlex-wrapContactSocialmedia-responsive-780px {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 170px;
+}
+.container-contact-responsive-780px {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-left: 0 !important;
+    align-items: center;
+    width: 100%;
+}
+/* Como a classe container-contatos foi retirada no layout 
+resposivo foi necessario replicar a estilo nos elementos dentro do container */
+.container-contact-responsive-780px p {
+    margin-bottom: 8px;
+}
+.container-contact-responsive-780px a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+}
+.container-contact-responsive-780px #input-myEmail {
+    border: none;
+    font-size: 17px;
+    color: black;
+    font-weight: bold;
+    background-color: transparent;
+    width: 280px;
+    cursor: pointer;
+}
+.container-contact-responsive-780px #input-myEmail:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+/* Como a classe container-redesSociais foi retirada no layout 
+resposivo foi necessario replicar a estilo nos elementos dentro do container */
+.container-socialMidia-responsive-780px {
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    background-color: white;
+    margin-right: 0 !important;
+    align-items: center;
+    width: 100%;
+}
+.container-socialMidia-responsive-780px a {
+    text-decoration: none;
+    color: black;
+}
+.container-socialMidia-responsive-780px i {    
+    transition: transform 0.5s ease;
+}
+.container-socialMidia-responsive-780px span {
+    transition: font-size 0.5s ease;
+}
+.container-socialMidia-responsive-780px a {
+    display: flex;
+    justify-content: center;
+    width: 100%;   
+}
+.style-button-contacts-socialMidea {
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    padding: 8px 0;
+    display: flex;
+    justify-content: center;
+}
+.city-country-marginBottom-responsive-780px {
+    margin-bottom: 60px !important;
+}
+.toolTip-copyEmail-newPosition-resposive-780px {
+    margin-top: 140px !important;
+    margin-left: 330px !important;
+}
+.toolTip-copiedEmail-newPosition-resposive-780px {
+    margin-top: 138px !important;
+    margin-left: 275px !important;
 }

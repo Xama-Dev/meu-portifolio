@@ -1,5 +1,5 @@
 let containerPresentationText = document.getElementById('presentation-text')
-let conteinerContatos = document.getElementById('contatiner-contatos')
+let conteinerContatos = document.getElementById('container-contatos')
 let containerRedesSociais = document.getElementById('container-redesSociais')
 
 containerPresentationText.classList.add('showContent')

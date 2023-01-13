@@ -1,11 +1,13 @@
 window.addEventListener('resize', ()=> {
     responsiveCarouselPortfolio();
     responsiveSkillsSection ();
+    reponsivePresentationSection ();
 });
 
 window.addEventListener('load', () => {
     responsiveCarouselPortfolio();
     responsiveSkillsSection ();
+    reponsivePresentationSection ();
 });
 
  function responsiveCarouselPortfolio () {
@@ -196,4 +198,86 @@ function responsiveSkillsSection () {
     }
 
 
+}
+
+function reponsivePresentationSection () {
+    let screenWidth = window.innerWidth
+
+    let containerPresentation = document.getElementById('container-presentation')
+
+    let textPresentation = document.getElementById('presentation-text')
+
+    let wrapContactSocialmedia = document.querySelector('.wrap-contatos-resesSociais')
+    let containerContact = document.getElementById('container-contatos')
+    let cityCountryPresentation = document.getElementById('city-country-presentation')
+    let containerSocialMedia = document.getElementById('container-redesSociais')
+
+    let divsContainerContact = document.querySelectorAll('#container-contatos div')
+    let divsContainerSocialMedia = document.querySelectorAll('#container-redesSociais div')
+
+    let toolTipCopyEmail = document.getElementById('toolTip-copy')
+    let toolTipCopiedEmail = document.getElementById('toolTip-copied')
+
+    if(screenWidth > 1040) {
+        containerContact.classList.remove('container-contact-marginLeft-responsive-1040px')
+        containerSocialMedia.classList.remove('container-socialMedia-marginRight-responsive-1040px')
+    }
+
+    // if(screenWidth <= 1040) {
+    //     containerContact.classList.add('container-contact-marginLeft-responsive-1040px')
+    //     containerSocialMedia.classList.add('container-socialMedia-marginRight-responsive-1040px')
+    // }
+
+    if (screenWidth > 780 && screenWidth <= 1040) {
+        textPresentation.classList.remove('text-presentation-resposive-fontSize-780px')
+        wrapContactSocialmedia.classList.remove('displayFlex-wrapContactSocialmedia-responsive-780px')
+
+        //Undo < 780px
+        containerContact.classList.add('container-contatos', 'container-contact-marginLeft-responsive-1040px')
+        containerContact.classList.remove('container-contact-responsive-780px')
+
+        containerSocialMedia.classList.add('container-redesSociais', 'container-socialMedia-marginRight-responsive-1040px')
+        containerSocialMedia.classList.remove('container-socialMidia-responsive-780px')
+
+        divsContainerContact.forEach((div)=> {
+            div.classList.add('marginBotton-8px')
+            div.classList.remove('style-button-contacts-socialMidea')
+        })
+        divsContainerSocialMedia.forEach((div)=> {
+            div.classList.add('marginBotton-8px')
+            div.classList.remove('style-button-contacts-socialMidea')
+        })
+
+        cityCountryPresentation.classList.remove('city-country-marginBottom-responsive-780px')
+        containerPresentation.classList.remove('container-presentation-height-responsive-780px')
+
+        toolTipCopyEmail.classList.remove('toolTip-copyEmail-newPosition-resposive-780px')
+        toolTipCopiedEmail.classList.remove('toolTip-copiedEmail-newPosition-resposive-780px')
+
+    }
+    if (screenWidth <= 780) {
+        textPresentation.classList.add('text-presentation-resposive-fontSize-780px')
+        wrapContactSocialmedia.classList.add('displayFlex-wrapContactSocialmedia-responsive-780px')
+
+        containerContact.classList.remove('container-contatos', 'container-contact-marginLeft-responsive-1040px')
+        containerContact.classList.add('container-contact-responsive-780px')
+
+        containerSocialMedia.classList.remove('container-redesSociais', 'container-socialMedia-marginRight-responsive-1040px')
+        containerSocialMedia.classList.add('container-socialMidia-responsive-780px')
+
+        divsContainerContact.forEach((div)=> {
+            div.classList.remove('marginBotton-8px')
+            div.classList.add('style-button-contacts-socialMidea')
+        })
+        divsContainerSocialMedia.forEach((div)=> {
+            div.classList.remove('marginBotton-8px')
+            div.classList.add('style-button-contacts-socialMidea')
+        })
+
+        cityCountryPresentation.classList.add('city-country-marginBottom-responsive-780px')
+        containerPresentation.classList.add('container-presentation-height-responsive-780px')
+
+        toolTipCopyEmail.classList.add('toolTip-copyEmail-newPosition-resposive-780px')
+        toolTipCopiedEmail.classList.add('toolTip-copiedEmail-newPosition-resposive-780px')
+    }
 }
