@@ -280,7 +280,7 @@ nav a:hover {
     height: 600px;
     /* background-color: black; */
     background-image: url('/img/skill-bakcground-img.jpg');
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     
 }
@@ -289,6 +289,7 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
     scroll-margin-top: 60px;
+    width: 100%;
     
 }
 .container-skills p {
@@ -325,7 +326,7 @@ nav a:hover {
 }
 .container-skills-images {
     position: absolute;
-    width: var(--widthGrid);
+    /* width: var(--widthGrid); */
     margin-top: 115px;
     margin-top: 400px;
 }
@@ -339,11 +340,11 @@ nav a:hover {
 }
 .img-row-skills {
     display: flex;
-    justify-content: space-around;
 }
 .img-row-skills img {
     width: 120px;
     border-radius: 4px;
+    margin: 0 18px;
 }
 
 /* => Diferenciais */
@@ -433,7 +434,7 @@ nav a:hover {
 }
 .owl-nav-portfolio-style {
     position: absolute;
-    top: 33%;
+    top: 28%;
     width: 100%;
     height: 1px;
 }
@@ -455,7 +456,7 @@ nav a:hover {
     padding: 35px 85px;
 }
 .container-project video{
-    width: 60%;
+    width: 50vw;
     /* border: 1px solid var(--greenPartiner); */
     box-shadow: 0px 0px 30px 0px rgb(14 13 13 / 32%);
     /* box-shadow: 0 10px 30px 0 rgb(14 13 13 / 32%); */
@@ -623,14 +624,15 @@ footer {
 }
 
 /* responsiviness */
-.nav-style-screen940px {
+/* => Carousel Portifolio */
+.nav-style-screen900px {
     font-size: 65px;
     margin-top: 0px !important;
     color: var(--greenPartiner);
     display: flex;
     background-color: black;
 }
-.buttonsNav-portfolio-screen940px {
+.buttonsNav-portfolio-screen900px {
     width: 50%;
 }
 .responsive-displayColumn-carouselPortfolio {
@@ -638,10 +640,40 @@ footer {
     align-items: center;
     padding: 0px 40px !important;
 }
-.infoProject-style-screen940px {
+.infoProject-style-screen900px {
     width: 100%;
     margin-left: 0px;    
 }
 .width-100Percent {
     width: 88% !important;
+}
+.text-projectinfo-center {
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* => Skills section*/
+.img-column-frontend-skills {
+    flex-direction: column;
+}
+.marginBottom-firstRow-containerImages-Frontend-skills {
+    margin-bottom: 20px;
+}
+.width-responsive-container-images-backend {
+    width: 610px;
+}
+.width-responsive-container-images-backend-640px {
+    width: 480px;
+}
+.width-imageCenter-backend-skills {
+    width: 260px !important;
+}
+.marginBottom-firstImage-responsiveColumn-backend-skills {
+    margin-bottom: 20px !important;
+}
+.section-skills-resposiveHeight {
+    height: 705px !important;
+}
+.resposive-text-greeting-skills-section {
+    text-align: center;
 }
