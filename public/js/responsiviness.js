@@ -221,18 +221,41 @@ function reponsivePresentationSection () {
     if(screenWidth > 1040) {
         containerContact.classList.remove('container-contact-marginLeft-responsive-1040px')
         containerSocialMedia.classList.remove('container-socialMedia-marginRight-responsive-1040px')
+
+        
+        //Undo < 780px
+        textPresentation.classList.remove('text-presentation-resposive-fontSize-780px')
+        wrapContactSocialmedia.classList.remove('displayFlex-wrapContactSocialmedia-responsive-780px')
+        
+        containerContact.classList.add('container-contatos')
+        containerContact.classList.remove('container-contact-responsive-780px')
+
+        containerSocialMedia.classList.add('container-redesSociais')
+        containerSocialMedia.classList.remove('container-socialMidia-responsive-780px')
+
+        divsContainerContact.forEach((div)=> {
+            div.classList.add('marginBotton-8px')
+            div.classList.remove('style-button-contacts-socialMidea')
+        })
+        divsContainerSocialMedia.forEach((div)=> {
+            div.classList.add('marginBotton-8px')
+            div.classList.remove('style-button-contacts-socialMidea')
+        })
+
+        cityCountryPresentation.classList.remove('city-country-marginBottom-responsive-780px')
+        containerPresentation.classList.remove('container-presentation-height-responsive-780px')
+
+        toolTipCopyEmail.classList.remove('toolTip-copyEmail-newPosition-resposive-780px')
+        toolTipCopiedEmail.classList.remove('toolTip-copiedEmail-newPosition-resposive-780px')
+        //----------------------------------
     }
 
-    // if(screenWidth <= 1040) {
-    //     containerContact.classList.add('container-contact-marginLeft-responsive-1040px')
-    //     containerSocialMedia.classList.add('container-socialMedia-marginRight-responsive-1040px')
-    // }
-
     if (screenWidth > 780 && screenWidth <= 1040) {
+        
+        //Undo < 780px
         textPresentation.classList.remove('text-presentation-resposive-fontSize-780px')
         wrapContactSocialmedia.classList.remove('displayFlex-wrapContactSocialmedia-responsive-780px')
 
-        //Undo < 780px
         containerContact.classList.add('container-contatos', 'container-contact-marginLeft-responsive-1040px')
         containerContact.classList.remove('container-contact-responsive-780px')
 
@@ -253,6 +276,7 @@ function reponsivePresentationSection () {
 
         toolTipCopyEmail.classList.remove('toolTip-copyEmail-newPosition-resposive-780px')
         toolTipCopiedEmail.classList.remove('toolTip-copiedEmail-newPosition-resposive-780px')
+        //----------------------------------
 
     }
     if (screenWidth <= 780) {
