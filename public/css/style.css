@@ -629,7 +629,7 @@ footer {
 /* responsiviness */
 /* => Carousel Portifolio */
 .nav-style-screen900px {
-    font-size: 65px;
+    font-size: 55px;
     margin-top: 0px !important;
     color: var(--greenPartiner);
     display: flex;
@@ -689,7 +689,7 @@ footer {
 
 /* => Presentation Section */
 .container-presentation-height-responsive-780px {
-    height: 829px;
+    height: 930px;
 }
 .text-presentation-resposive-fontSize-780px {
     font-size: 19px !important;
@@ -704,12 +704,12 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 170px;
+    margin-top: 256px;
 }
 .container-contact-responsive-780px {
     display: flex;
     flex-direction: column;
-    background-color: white;
+    /* background-color: white; */
     margin-left: 0 !important;
     align-items: center;
     width: 100%;
@@ -718,6 +718,7 @@ footer {
 resposivo foi necessario replicar a estilo nos elementos dentro do container */
 .container-contact-responsive-780px p {
     margin-bottom: 8px;
+    background-color: white;
 }
 .container-contact-responsive-780px a {
     display: flex;
@@ -746,7 +747,7 @@ resposivo foi necessario replicar a estilo nos elementos dentro do container */
     display: flex;
     flex-direction: column;
     width: 310px;
-    background-color: white;
+    /* background-color: white; */
     margin-right: 0 !important;
     align-items: center;
     width: 100%;
@@ -768,11 +769,13 @@ resposivo foi necessario replicar a estilo nos elementos dentro do container */
 }
 .style-button-contacts-socialMidea {
     width: 100%;
-    border-bottom: 1px solid lightgray;
-    border-top: 1px solid lightgray;
+    border: 2px solid lightgray;
     padding: 8px 0;
     display: flex;
     justify-content: center;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    background-color: white;
 }
 .city-country-marginBottom-responsive-780px {
     margin-bottom: 60px !important;
