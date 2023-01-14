@@ -48,17 +48,15 @@ window.addEventListener('load', () => {
         })
 
         videoCarouselPortfolio.forEach((video) => {
-            video.style.width = '50vw'
-            video.style.marginBottom = '0px'
+            video.style.width = '50vw'    
+            video.classList.remove('video-style-screen900px')        
         })
 
         infoProjectCollection.forEach((infoProject) => {
             infoProject.classList.remove('infoProject-style-screen900px')
         })
         //-----------------------------------------------
-    }
-
-    if (screenWidth )
+    }    
 
     if (screenWidth > 900 && screenWidth <= 1090) {
         navCarouselPortfolio.classList.add('display-none')             
@@ -87,7 +85,7 @@ window.addEventListener('load', () => {
 
         videoCarouselPortfolio.forEach((video) => {
             video.style.width = '50vw'
-            video.style.marginBottom = '0px'
+            video.classList.remove('video-style-screen900px')
         })
 
         infoProjectCollection.forEach((infoProject) => {
@@ -117,8 +115,7 @@ window.addEventListener('load', () => {
         })
 
         videoCarouselPortfolio.forEach((video) => {
-            video.style.width = '100%'
-            video.style.marginBottom = '15px'
+            video.classList.add('video-style-screen900px')
         })
 
         infoProjectCollection.forEach((infoProject) => {
@@ -226,7 +223,7 @@ function reponsivePresentationSection () {
         //Undo < 780px
         textPresentation.classList.remove('text-presentation-resposive-fontSize-780px')
         wrapContactSocialmedia.classList.remove('displayFlex-wrapContactSocialmedia-responsive-780px')
-        
+
         containerContact.classList.add('container-contatos')
         containerContact.classList.remove('container-contact-responsive-780px')
 

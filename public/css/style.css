@@ -477,7 +477,7 @@ nav a:hover {
     width: 215px;
 }
 .info-project {
-    margin-left: 52px;
+    margin-right: 52px;
     padding: 30px;
     background-color: var(--greenPartiner);
     box-shadow: 0px 0px 30px 0px rgb(14 13 13 / 32%);
@@ -645,7 +645,13 @@ footer {
 }
 .infoProject-style-screen900px {
     width: 100%;
-    margin-left: 0px;    
+    height: 475px;
+    margin-right: 0px;    
+    margin-bottom: 40px;
+}
+.video-style-screen900px {
+    width: 100% !important;
+    margin-bottom: 20px;
 }
 .width-100Percent {
     width: 88% !important;
