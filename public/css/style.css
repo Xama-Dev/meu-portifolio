@@ -352,31 +352,37 @@ nav a:hover {
 
 /* => Diferenciais */
 #section-advantages {
-    height: 464px;    
+    /* height: 464px;     */
     background-color: #602060;
     display: flex;
     flex-direction: column;
     align-items: center;
-    scroll-margin-top: 60px;
+    scroll-margin-top: 60px;    
 }
 #section-advantages h2 {
     color: white;
     padding-top: 45px;
 }
 #container-owlCarousel-advantages {
-    width: 500px;
-    height: 100%;
-    margin: 0 auto;
+    width: 100%;
+    /* height: 100%; */
+    /* margin: 0 auto; */
     display: flex;
     align-items: center;
 
 }
+.owl-carousel-advantages-style-bigScreens {
+    width: 520px !important;
+    margin: 0 auto;
+}
 .container-advantage {
     background-color: white;
-    width: 100%;
-    height: 220px;
+    /* width: 100%; */
+    height: 230px;
     padding: 0 20px;
     margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -393,19 +399,22 @@ nav a:hover {
 #container-owlCarousel-advantages .owl-nav {
     margin-top: 28px;
 }
-#container-owlCarousel-advantages .owl-prev {    
+#container-owlCarousel-advantages .owl-dots {
+    padding-bottom: 20px;
+}
+.owl-prev-carouselAdvantages-style {    
     position: absolute;
     top: 130px;
     left: -85px;
-    color: white;
-    font-size: 40px;    
+    color: white !important;
+    font-size: 40px !important;    
 }
-#container-owlCarousel-advantages .owl-next {    
+.owl-next-carouselAdvantages-style {    
     position: absolute;
     top: 130px;
     right: -85px;
-    color: white;
-    font-size: 40px;    
+    color: white !important;
+    font-size: 40px !important;    
 }
 
 
@@ -787,4 +796,23 @@ resposivo foi necessario replicar a estilo nos elementos dentro do container */
 .toolTip-copiedEmail-newPosition-resposive-780px {
     margin-top: 138px !important;
     margin-left: 275px !important;
+}
+
+/* => Advantages Section */
+.container-carouselAdvantages-responsiveStyle-width720px {
+    width: 100% !important;
+}
+.containerAdvantages-responsiveStyle-width720px {
+    width: 85% !important;
+    margin: 50px auto 0;
+    height: 320px;
+}
+.nav-style-screen720px {
+    font-size: 55px;
+    display: flex;
+    background-color: #602060;
+    color: white;
+}
+.buttonsNav-Advantages-screen720px {
+    width: 50%;
 }

@@ -2,7 +2,7 @@ $(document).ready(function() {
     $(".owl-carousel-advantages").owlCarousel({
         loop:false,
         margin:50,
-        responsiveClass:false,
+        responsiveClass: false,
         nav: true,
         items: 1,
         center: false,
@@ -11,6 +11,14 @@ $(document).ready(function() {
 
         
     });
+
+    //add dynamically style on next and prev button nav
+    let nextButton = document.getElementsByClassName('owl-next')[0]
+    let prevButton = document.getElementsByClassName('owl-prev')[0]
+
+    nextButton.classList.add('owl-next-carouselAdvantages-style')
+    prevButton.classList.add('owl-prev-carouselAdvantages-style')
+
 });
 
 $(document).ready(function() {
