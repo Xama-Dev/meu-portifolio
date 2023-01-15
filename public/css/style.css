@@ -43,6 +43,9 @@
 .marginBotton-8px {
     margin-bottom: 8px;
 }
+.margin-bottom-tags-footer {
+    margin-bottom: 35px;
+}
 
 /* => Menu nav */
 nav {
@@ -538,15 +541,19 @@ p.text-description a {
 
 /* => Footer */
 footer {
-    height: 250px;
+    /* height: 250px; */
     background-color: #333333;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    padding: 40px 20px;
 }
 .grid-footer {
-    width: var(--widthGrid);
+    width: 100%;
     display: flex;
     margin: 0 auto;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
     
 }
 .grid-footer * {
@@ -560,14 +567,17 @@ footer {
     width: 32px;
     border-bottom: 2px solid var(--greenPartiner);
     display: block;
-    margin-bottom: 32px;
 }
 .container-menuNav-footer {
-    /* background-color: rebeccapurple; */
-    width: 25%;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 .container-menuNav-footer ul {
     list-style: none;
+    text-align: center;
 }
 .container-menuNav-footer a {
     text-decoration: none;
@@ -575,18 +585,14 @@ footer {
     margin-bottom: 12px;
     display: inline-block;
 }
-.wrap-container-central-footer {
-    width: fit-content;
+.container-menuNav-footer li:last-child a {
+    display: inline !important;
 }
 .container-redesSociais-footer {
-    /* background-color: lightgreen; */
-    width: 50%;
-    text-align: center;
-}
-.container-tag-redesSociais {
+    width: 33%;
     display: flex;
-    justify-content: space-around;
-
+    flex-direction: column;
+    align-items: center;
 }
 .container-icons-redesSociais {
     display: flex;
@@ -603,17 +609,24 @@ footer {
 .container-icon-brain i {
     color: var(--greenPartiner);
     font-size: 35px;
-    margin-top: 45px;
+    margin-bottom: 10px;
 }
 .container-info-copyRigths {
-    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;    
+    margin-top: 30px;
 }
 .container-info-copyRigths p {
     font-size: 13px;
+    color: white;
 }
 .container-contato-footer {
-    /* background-color:lightsalmon; */
-    width: 25%;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .container-icons-contact {
     display: flex;
@@ -627,6 +640,7 @@ footer {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    justify-content: center;
 }
 .container-icons-contact div p {
     font-size: 15px;
@@ -815,4 +829,16 @@ resposivo foi necessario replicar a estilo nos elementos dentro do container */
 }
 .buttonsNav-Advantages-screen720px {
     width: 50%;
+}
+
+/*  => Footer */
+.flex-direction-column-screen-900px {
+    flex-direction: column;
+    align-items: center;
+}
+.margin-bottom-tags-footer-screen900px {
+    margin-bottom: 10px;
+}
+.margin-botton-containers-screen900px {
+    margin-bottom: 65px;
 }

@@ -3,6 +3,7 @@ window.addEventListener('resize', ()=> {
     responsiveSkillsSection ();
     reponsivePresentationSection ();
     responsiveAdvantages ();
+    responsiveFooter ();
 });
 
 window.addEventListener('load', () => {
@@ -10,6 +11,7 @@ window.addEventListener('load', () => {
     responsiveSkillsSection ();
     reponsivePresentationSection ();
     responsiveAdvantages ();
+    responsiveFooter ();
 });
 
 
@@ -355,3 +357,41 @@ function responsiveCarouselPortfolio () {
  
     }
  };
+
+ function responsiveFooter () {
+    let screenWidth = window.innerWidth
+    let gridFooter = document.querySelector('.grid-footer')
+    let tagsFooter = document.querySelectorAll('.tags-footer')
+    let containersFooter = document.querySelectorAll('.grid-footer > div')
+
+    if (screenWidth > 900) {
+        
+        //Undo < 900px
+        gridFooter.classList.remove('flex-direction-column-screen-900px')
+
+        tagsFooter.forEach((tag)=> {
+            tag.classList.add('margin-bottom-tags-footer')
+            tag.classList.remove('margin-bottom-tags-footer-screen900px')
+
+        })
+
+        containersFooter.forEach((container)=> {
+            container.classList.remove('margin-botton-containers-screen900px')
+        })
+
+    }
+    
+    if (screenWidth <= 900) {
+        gridFooter.classList.add('flex-direction-column-screen-900px')
+
+        tagsFooter.forEach((tag)=> {
+            tag.classList.remove('margin-bottom-tags-footer')
+            tag.classList.add('margin-bottom-tags-footer-screen900px')
+        })
+        console.log(tagsFooter)
+        console.log(containersFooter)
+        containersFooter.forEach((container)=> {
+            container.classList.add('margin-botton-containers-screen900px')
+        })
+    }
+ }
