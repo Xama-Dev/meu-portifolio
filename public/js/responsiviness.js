@@ -4,6 +4,7 @@ window.addEventListener('resize', ()=> {
     reponsivePresentationSection ();
     responsiveAdvantages ();
     responsiveFooter ();
+    responsiveNav ();
 });
 
 window.addEventListener('load', () => {
@@ -12,9 +13,26 @@ window.addEventListener('load', () => {
     reponsivePresentationSection ();
     responsiveAdvantages ();
     responsiveFooter ();
+    responsiveNav ();
 });
 
+function responsiveNav () {
+    let screenWidth = window.innerWidth
+    let containerMenu = document.querySelector('.container-menu')
+    let btnMenu = document.querySelector('.btn-menu')
 
+    if (screenWidth > 800) {
+        
+        //Undo <= 800px
+        containerMenu.classList.remove('display-none')
+        btnMenu.classList.add('display-none')
+    }
+    
+    if (screenWidth <= 800) {
+        containerMenu.classList.add('display-none')
+        btnMenu.classList.remove('display-none')
+    }
+}
 
 function reponsivePresentationSection () {
     let screenWidth = window.innerWidth
@@ -127,6 +145,7 @@ function responsiveSkillsSection () {
     
     let sectionSkills = document.getElementById('section-skills')
     let pContainerSkills = document.querySelector('#container-skills p')
+    let containerBtnsChangeSkills = document.getElementById('conteiner-btnChangeSkills')
     
     let containerImagesFrontendSkills = document.querySelector('#container-frontEnd-skills .img-row-skills')
     let firstRowImagesFrontendSkills = document.querySelector('#container-frontEnd-skills .img-row-skills div:first-child')
@@ -141,6 +160,8 @@ function responsiveSkillsSection () {
         sectionSkills.classList.remove('section-skills-resposiveHeight')
  
         pContainerSkills.classList.remove('resposive-text-greeting-skills-section')
+        
+        containerBtnsChangeSkills.classList.remove('container-btns-changeSkills-width-screen640px')
         
         containerImagesFrontendSkills.classList.remove('img-column-frontend-skills')
         firstRowImagesFrontendSkills.classList.remove('marginBottom-firstRow-containerImages-Frontend-skills')
@@ -160,6 +181,8 @@ function responsiveSkillsSection () {
  
         pContainerSkills.classList.add('resposive-text-greeting-skills-section')
         
+        containerBtnsChangeSkills.classList.remove('container-btns-changeSkills-width-screen640px')
+        
         containerImagesFrontendSkills.classList.add('img-column-frontend-skills')
         firstRowImagesFrontendSkills.classList.add('marginBottom-firstRow-containerImages-Frontend-skills')
  
@@ -178,6 +201,8 @@ function responsiveSkillsSection () {
         sectionSkills.classList.add('section-skills-resposiveHeight')
  
         pContainerSkills.classList.add('resposive-text-greeting-skills-section')
+
+        containerBtnsChangeSkills.classList.add('container-btns-changeSkills-width-screen640px')
         
         containerImagesFrontendSkills.classList.add('img-column-frontend-skills')
         firstRowImagesFrontendSkills.classList.add('marginBottom-firstRow-containerImages-Frontend-skills')
