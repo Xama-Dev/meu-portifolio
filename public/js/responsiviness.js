@@ -19,19 +19,50 @@ window.addEventListener('load', () => {
 function responsiveNav () {
     let screenWidth = window.innerWidth
     let containerMenu = document.querySelector('.container-menu')
+    
     let btnMenu = document.querySelector('.btn-menu')
+    let menuAside = document.querySelector('.aside-menu')
+    let menuAsideMarginLeft = menuAside.style.marginLeft
+    
+    let btnCloseAsideMenu = document.querySelector('.fa-xmark')
+
+
 
     if (screenWidth > 800) {
         
         //Undo <= 800px
         containerMenu.classList.remove('display-none')
         btnMenu.classList.add('display-none')
+        
+        menuAside.style.marginLeft = '-251px'
+        menuAsideMarginLeft = menuAside.style.marginLeft
+        //-------------------------
+
     }
     
     if (screenWidth <= 800) {
         containerMenu.classList.add('display-none')
         btnMenu.classList.remove('display-none')
+        
+        btnMenu.addEventListener('click', ()=> {            
+            if (menuAsideMarginLeft == '-251px') {
+                menuAside.style.marginLeft = '0px'
+                
+            }
+            if (menuAsideMarginLeft == '0px') {
+                menuAside.style.marginLeft = '-251px'
+
+            } 
+
+            menuAsideMarginLeft = menuAside.style.marginLeft            
+        })
+    
+        btnCloseAsideMenu.addEventListener('click', ()=> {
+            menuAside.style.marginLeft = '-251px'
+            menuAsideMarginLeft = menuAside.style.marginLeft
+        })
     }
+
 }
 
 function reponsivePresentationSection () {
@@ -413,8 +444,7 @@ function responsiveCarouselPortfolio () {
             tag.classList.remove('margin-bottom-tags-footer')
             tag.classList.add('margin-bottom-tags-footer-screen900px')
         })
-        console.log(tagsFooter)
-        console.log(containersFooter)
+
         containersFooter.forEach((container)=> {
             container.classList.add('margin-botton-containers-screen900px')
         })

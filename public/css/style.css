@@ -49,7 +49,7 @@
 
 /* => Menu nav */
 nav {
-    /* border-bottom: 2px solid var(--greenPartiner); */
+    border-bottom: 2px solid var(--greenPartiner);
     position: sticky;
     top: 0;
     z-index: 2;
@@ -63,16 +63,16 @@ nav {
     width: 1000px;
     margin: 0 auto;
 }
-nav ul {
+.container-menu ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
 }
-nav ul li {
+.container-menu ul li {
     display: inline;
     font-size: 13px;
 }
-nav a {
+.container-menu a {
     text-decoration: none;
     color: var(--greenPartiner);
     font-weight: bold;
@@ -80,13 +80,13 @@ nav a {
     border-radius: 15px;
     transition: background-color 0.5s , color 0.5s;
 }
-nav a:hover {
+.container-menu a:hover {
     background-color: var(--greenPartiner);
     color: white;
 }
 .btn-nav-active {
     background-color: var(--greenPartiner);
-    color: white;
+    color: white !important;
 }
 .btn-menu {
     color: var(--greenPartiner);
@@ -671,7 +671,60 @@ footer {
 
 /* ---------------------- responsiviness -------------------------*/
 /* => Nav */
-
+.aside-menu {
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    top: 60px;
+    transition: margin-left 0.5s;    
+}
+.aside-menu ul {
+    list-style: none;
+}
+.aside-menu ul li{
+    color: var(--greenPartiner);
+    height: 65px;
+}
+.aside-menu a {
+    text-decoration: none;
+    color: var(--greenPartiner);
+    display: inherit;
+    transition: background-color 0.5s, color 0.5s;
+}
+.container-btn-closeMenu {
+    height: 68px;
+    /* background-color: red;
+    border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: 0 10px 0 0;
+}
+.container-btn-closeMenu i {
+    font-size: 26px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.item-menu {
+    height: 35px;
+    /* background-color: red;
+    border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 18px;
+}
+.item-menu i {
+    margin-right: 10px;
+    font-size: 16px;
+}
+.item-menu span {
+    font-size: 13px;
+}
+.item-asideMenu-active {
+    background-color: var(--greenPartiner) !important;
+    color: white !important;
+}
 /* => Carousel Portifolio */
 .nav-style-screen900px {
     font-size: 55px;
