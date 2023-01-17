@@ -66,9 +66,10 @@ function responsiveNav () {
 }
 
 function reponsivePresentationSection () {
-    let screenWidth = window.innerWidth
+    let screenWidth = document.body.clientWidth
     
     let containerPresentation = document.getElementById('container-presentation')
+    let containerGreeting = document.querySelector('.container-greeting')
     
     let textPresentation = document.getElementById('presentation-text')
 
@@ -113,6 +114,11 @@ function reponsivePresentationSection () {
         toolTipCopyEmail.classList.remove('toolTip-copyEmail-newPosition-resposive-780px')
         toolTipCopiedEmail.classList.remove('toolTip-copiedEmail-newPosition-resposive-780px')
         //----------------------------------
+
+        //Undo <= 500
+        containerGreeting.classList.remove('style-containerGreeting-screen500px')
+        textPresentation.classList.remove('width-containerTextPresentantion-screnn500px')
+        //------------------------------------
     }
 
     if (screenWidth > 780 && screenWidth <= 1040) {
@@ -143,8 +149,15 @@ function reponsivePresentationSection () {
         toolTipCopiedEmail.classList.remove('toolTip-copiedEmail-newPosition-resposive-780px')
         //----------------------------------
 
+        //Undo <= 500
+        containerGreeting.classList.remove('style-containerGreeting-screen500px')
+        textPresentation.classList.remove('width-containerTextPresentantion-screnn500px')
+        //------------------------------------
+
     }
-    if (screenWidth <= 780) {
+
+    if (screenWidth <= 780 && screenWidth > 500) {
+
         textPresentation.classList.add('text-presentation-resposive-fontSize-780px')
         wrapContactSocialmedia.classList.add('displayFlex-wrapContactSocialmedia-responsive-780px')
 
@@ -168,6 +181,44 @@ function reponsivePresentationSection () {
 
         toolTipCopyEmail.classList.add('toolTip-copyEmail-newPosition-resposive-780px')
         toolTipCopiedEmail.classList.add('toolTip-copiedEmail-newPosition-resposive-780px')
+
+        //Undo <= 500
+        containerGreeting.classList.remove('style-containerGreeting-screen500px')
+        textPresentation.classList.remove('width-containerTextPresentantion-screnn500px')
+        //------------------------------------
+    }
+
+    if (screenWidth <= 500) {
+
+        containerGreeting.classList.add('style-containerGreeting-screen500px')
+        textPresentation.classList.add('width-containerTextPresentantion-screnn500px')
+        
+
+        //-----recebe toda configuração anterior de <= 780 && screenWidth > 500
+        textPresentation.classList.add('text-presentation-resposive-fontSize-780px')
+        wrapContactSocialmedia.classList.add('displayFlex-wrapContactSocialmedia-responsive-780px')
+
+        containerContact.classList.remove('container-contatos', 'container-contact-marginLeft-responsive-1040px')
+        containerContact.classList.add('container-contact-responsive-780px')
+
+        containerSocialMedia.classList.remove('container-redesSociais', 'container-socialMedia-marginRight-responsive-1040px')
+        containerSocialMedia.classList.add('container-socialMidia-responsive-780px')
+
+        divsContainerContact.forEach((div)=> {
+            div.classList.remove('marginBotton-8px')
+            div.classList.add('style-button-contacts-socialMidea')
+        })
+        divsContainerSocialMedia.forEach((div)=> {
+            div.classList.remove('marginBotton-8px')
+            div.classList.add('style-button-contacts-socialMidea')
+        })
+
+        cityCountryPresentation.classList.add('city-country-marginBottom-responsive-780px')
+        containerPresentation.classList.add('container-presentation-height-responsive-780px')
+
+        toolTipCopyEmail.classList.add('toolTip-copyEmail-newPosition-resposive-780px')
+        toolTipCopiedEmail.classList.add('toolTip-copiedEmail-newPosition-resposive-780px')
+        //--------------------------------------------------------------------
     }
 }
 

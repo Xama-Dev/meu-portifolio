@@ -789,6 +789,13 @@ footer {
 }
 
 /* => Presentation Section */
+.style-containerGreeting-screen500px {
+    align-items: baseline !important;
+}
+.width-containerTextPresentantion-screnn500px {
+    width: 260px !important;
+    margin-top: 30px;
+}
 .container-presentation-height-responsive-780px {
     height: 930px;
 }
