@@ -271,6 +271,34 @@ function responsiveSkillsSection () {
         firstImagesResposiveColumnBackandSkills.forEach((img)=> {
             img.classList.remove('marginBottom-firstImage-responsiveColumn-backend-skills')
         })
+        //----------------------------
+
+        
+        //Undo <= 500
+        //Front-end
+        skillsSection.classList.remove('heigth-skillsSection-screnn500px')
+        pContainerSkills.classList.remove('style-p-text-screen500px')
+        containerBtnsChangeSkills.classList.remove('style-btnsSkills-500px')
+        containerFrontendSkills.classList.remove('marginTop-containerFrontendSkills-screen500px')
+
+        divContainerImagesFrontendSkills.forEach((div=> {
+            div.classList.remove('div-containerImages-frontendSkills-flexColumn-screen500px')
+        } ))
+
+        allImagensFrontendSkills.forEach((img)=> {
+            img.classList.remove('margin-AllimagesFrontendSkills-screen500px')
+        })
+
+        //back-end
+        containerImagesBackendSkills.classList.remove('images-column-backend-skills')
+        containerBackendSkills.classList.remove('marginTop-containerBackendSkills-screen500px')
+        divContainerImageCenterBackandSkills.classList.remove('image-center-backendSkills-centralize-screen500px')
+
+        allImagensBackendSkills.forEach((img)=> {
+            img.classList.remove('margin-AllimagesBackendSkills-screen500px')
+        })
+
+        //--------------------
  
     }
  
@@ -292,6 +320,32 @@ function responsiveSkillsSection () {
         firstImagesResposiveColumnBackandSkills.forEach((img)=> {
             img.classList.add('marginBottom-firstImage-responsiveColumn-backend-skills')
         })
+
+        //Undo <= 500
+        //Front-end
+        skillsSection.classList.remove('heigth-skillsSection-screnn500px')
+        pContainerSkills.classList.remove('style-p-text-screen500px')
+        containerBtnsChangeSkills.classList.remove('style-btnsSkills-500px')
+        containerFrontendSkills.classList.remove('marginTop-containerFrontendSkills-screen500px')
+
+        divContainerImagesFrontendSkills.forEach((div=> {
+            div.classList.remove('div-containerImages-frontendSkills-flexColumn-screen500px')
+        } ))
+
+        allImagensFrontendSkills.forEach((img)=> {
+            img.classList.remove('margin-AllimagesFrontendSkills-screen500px')
+        })
+
+        //back-end
+        containerImagesBackendSkills.classList.remove('images-column-backend-skills')
+        containerBackendSkills.classList.remove('marginTop-containerBackendSkills-screen500px')
+        divContainerImageCenterBackandSkills.classList.remove('image-center-backendSkills-centralize-screen500px')
+
+        allImagensBackendSkills.forEach((img)=> {
+            img.classList.remove('margin-AllimagesBackendSkills-screen500px')
+        })
+
+        //--------------------
     }
  
     if (screenWidth <= 640 && screenWidth > 500) {
