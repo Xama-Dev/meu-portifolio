@@ -223,19 +223,27 @@ function reponsivePresentationSection () {
 }
 
 function responsiveSkillsSection () {
-    let screenWidth = window.innerWidth
+    let screenWidth = document.body.clientWidth
+
+    let skillsSection = document.getElementById('section-skills')
+
     
     let sectionSkills = document.getElementById('section-skills')
     let pContainerSkills = document.querySelector('#container-skills p')
     let containerBtnsChangeSkills = document.getElementById('conteiner-btnChangeSkills')
     
+    let containerFrontendSkills = document.getElementById('container-frontEnd-skills')
     let containerImagesFrontendSkills = document.querySelector('#container-frontEnd-skills .img-row-skills')
     let firstRowImagesFrontendSkills = document.querySelector('#container-frontEnd-skills .img-row-skills div:first-child')
+    let divContainerImagesFrontendSkills = document.querySelectorAll('#container-frontEnd-skills .img-row-skills div')
+    let allImagensFrontendSkills = document.querySelectorAll('#container-frontEnd-skills .img-row-skills img')
    
- 
+    let containerBackendSkills = document.getElementById('container-backEnd-skills')
     let containerImagesBackendSkills = document.querySelector('#container-backEnd-skills .img-row-skills')
+    let divContainerImageCenterBackandSkills = document.querySelectorAll('#container-backEnd-skills .img-row-skills div')[1]
     let imgCenterBackendSkills = document.getElementById('image-center-backend-skills')
     let firstImagesResposiveColumnBackandSkills = document.querySelectorAll('.firstImage-responsive-column')
+    let allImagensBackendSkills = document.querySelectorAll('#container-backEnd-skills .img-row-skills img')
     
     if(screenWidth > 1080) {
         //Undo <= 1080px
@@ -278,7 +286,7 @@ function responsiveSkillsSection () {
         })
     }
  
-    if (screenWidth <= 640) {
+    if (screenWidth <= 640 && screenWidth > 500) {
         //set only front-end skills layout
         sectionSkills.classList.add('section-skills-resposiveHeight')
  
@@ -296,6 +304,63 @@ function responsiveSkillsSection () {
         firstImagesResposiveColumnBackandSkills.forEach((img)=> {
             img.classList.add('marginBottom-firstImage-responsiveColumn-backend-skills')
         })
+
+        //Undo <= 500
+        //Front-end
+        skillsSection.classList.remove('heigth-skillsSection-screnn500px')
+        pContainerSkills.classList.remove('style-p-text-screen500px')
+        containerBtnsChangeSkills.classList.remove('style-btnsSkills-500px')
+        containerFrontendSkills.classList.remove('marginTop-containerFrontendSkills-screen500px')
+
+        divContainerImagesFrontendSkills.forEach((div=> {
+            div.classList.remove('div-containerImages-frontendSkills-flexColumn-screen500px')
+        } ))
+
+        allImagensFrontendSkills.forEach((img)=> {
+            img.classList.remove('margin-AllimagesFrontendSkills-screen500px')
+        })
+
+        //back-end
+        containerImagesBackendSkills.classList.remove('images-column-backend-skills')
+        containerBackendSkills.classList.remove('marginTop-containerBackendSkills-screen500px')
+        divContainerImageCenterBackandSkills.classList.remove('image-center-backendSkills-centralize-screen500px')
+
+        allImagensBackendSkills.forEach((img)=> {
+            img.classList.remove('margin-AllimagesBackendSkills-screen500px')
+        })
+
+        //--------------------
+
+    }
+
+    if (screenWidth <= 500) {
+        skillsSection.classList.add('heigth-skillsSection-screnn500px')
+        pContainerSkills.classList.add('style-p-text-screen500px')
+        containerBtnsChangeSkills.classList.add('style-btnsSkills-500px')
+        
+        //front-end skills
+        containerImagesFrontendSkills.classList.remove('img-column-frontend-skills')
+        containerFrontendSkills.classList.add('marginTop-containerFrontendSkills-screen500px')
+
+        divContainerImagesFrontendSkills.forEach((div=> {
+            div.classList.add('div-containerImages-frontendSkills-flexColumn-screen500px')
+        } ))
+
+        allImagensFrontendSkills.forEach((img)=> {
+            img.classList.add('margin-AllimagesFrontendSkills-screen500px')
+        })
+        //---------------------
+
+        //back-end skills
+        containerImagesBackendSkills.classList.add('images-column-backend-skills')
+        containerBackendSkills.classList.add('marginTop-containerBackendSkills-screen500px')
+        divContainerImageCenterBackandSkills.classList.add('image-center-backendSkills-centralize-screen500px')
+
+        allImagensBackendSkills.forEach((img)=> {
+            img.classList.add('margin-AllimagesBackendSkills-screen500px')
+        })
+        //---------------------
+        
     }
  
  

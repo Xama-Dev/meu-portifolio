@@ -787,6 +787,41 @@ footer {
 .resposive-text-greeting-skills-section {
     text-align: center;
 }
+.style-p-text-screen500px {
+    font-size: 15px !important;
+    width: 100% !important;
+    text-align: center;
+}
+.style-btnsSkills-500px {
+    width: 100% !important;
+}
+.div-containerImages-frontendSkills-flexColumn-screen500px {
+    display: flex !important;
+    flex-direction: column !important;
+}
+.margin-AllimagesFrontendSkills-screen500px {
+    margin: 10px !important;
+}
+.marginTop-containerFrontendSkills-screen500px {
+    margin-top: 360px !important;
+}
+.heigth-skillsSection-screnn500px {
+    height: 830px !important;
+}
+.images-column-backend-skills {
+    flex-direction: column;
+    width: 100% !important;
+}
+.margin-AllimagesBackendSkills-screen500px {
+    margin: 10px !important;
+}
+.marginTop-containerBackendSkills-screen500px {
+    margin-top: 360px !important;
+}
+.image-center-backendSkills-centralize-screen500px {
+    display: flex;
+    justify-content: center;
+}
 
 /* => Presentation Section */
 .style-containerGreeting-screen500px {
