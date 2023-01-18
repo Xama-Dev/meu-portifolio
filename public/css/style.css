@@ -932,6 +932,9 @@ resposivo foi necessario replicar a estilo nos elementos dentro do container */
     margin-top: 138px !important;
     margin-left: 275px !important;
 }
+.marginLeft-toolTipCopied-screen500px {
+    margin-left: 100px;
+}
 
 /* => Advantages Section */
 .container-carouselAdvantages-responsiveStyle-width720px {

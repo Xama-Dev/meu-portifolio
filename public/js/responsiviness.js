@@ -118,6 +118,8 @@ function reponsivePresentationSection () {
         //Undo <= 500
         containerGreeting.classList.remove('style-containerGreeting-screen500px')
         textPresentation.classList.remove('width-containerTextPresentantion-screnn500px')
+        toolTipCopyEmail.classList.remove('display-none')
+        toolTipCopiedEmail.classList.remove('marginLeft-toolTipCopied-screen500px')
         //------------------------------------
     }
 
@@ -152,6 +154,8 @@ function reponsivePresentationSection () {
         //Undo <= 500
         containerGreeting.classList.remove('style-containerGreeting-screen500px')
         textPresentation.classList.remove('width-containerTextPresentantion-screnn500px')
+        toolTipCopyEmail.classList.remove('display-none')
+        toolTipCopiedEmail.classList.remove('marginLeft-toolTipCopied-screen500px')
         //------------------------------------
 
     }
@@ -185,6 +189,8 @@ function reponsivePresentationSection () {
         //Undo <= 500
         containerGreeting.classList.remove('style-containerGreeting-screen500px')
         textPresentation.classList.remove('width-containerTextPresentantion-screnn500px')
+        toolTipCopyEmail.classList.remove('display-none')
+        toolTipCopiedEmail.classList.remove('marginLeft-toolTipCopied-screen500px')
         //------------------------------------
     }
 
@@ -192,6 +198,8 @@ function reponsivePresentationSection () {
 
         containerGreeting.classList.add('style-containerGreeting-screen500px')
         textPresentation.classList.add('width-containerTextPresentantion-screnn500px')
+        toolTipCopyEmail.classList.add('display-none')
+        toolTipCopiedEmail.classList.add('marginLeft-toolTipCopied-screen500px')
         
 
         //-----recebe toda configuração anterior de <= 780 && screenWidth > 500
