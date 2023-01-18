@@ -233,10 +233,9 @@ function reponsivePresentationSection () {
 function responsiveSkillsSection () {
     let screenWidth = document.body.clientWidth
 
-    let skillsSection = document.getElementById('section-skills')
-
-    
+    let skillsSection = document.getElementById('section-skills')    
     let sectionSkills = document.getElementById('section-skills')
+    
     let pContainerSkills = document.querySelector('#container-skills p')
     let containerBtnsChangeSkills = document.getElementById('conteiner-btnChangeSkills')
     
@@ -429,8 +428,11 @@ function responsiveSkillsSection () {
  }
 
  function responsiveAdvantages () {
-    let screenWidth = window.innerWidth
+    let screenWidth = document.body.clientWidth
     
+    let iconsAdvantageInfoBox = document.querySelectorAll('.container-advantage i')
+    let headersh3infoBox = document.querySelectorAll('.container-text-advantage h3')
+
     let dotsCarouselAdvantages = document.querySelector('#container-owlCarousel-advantages .owl-dots')
     let navCarouselAdvantages = document.querySelector('#container-owlCarousel-advantages .owl-nav')
     let owlCarousel = document.querySelector('.owl-carousel-advantages')
@@ -459,7 +461,22 @@ function responsiveSkillsSection () {
         })
         //-------------------------------
 
+        //Undo < 500
+        containersAdvantage.forEach((container)=> {
+            container.classList.remove('containerAdvantages-responsiveStyle-screen500px')
+        })
+
+        iconsAdvantageInfoBox.forEach((icon)=> {
+            icon.classList.remove('style-icons-infoBoxAdvantages-screen500px')
+        })
+
+        headersh3infoBox.forEach((h3)=> {
+            h3.classList.remove('style-h3-infoBoxAdvantages-screen500px')
+        })
+        //-------------------------------
+
     }
+
     if(screenWidth <= 720) {
         owlCarousel.classList.remove ('owl-carousel-advantages-style-bigScreens')
         containerCarouselAdvantages.classList.add('container-carouselAdvantages-responsiveStyle-width720px')
@@ -474,6 +491,35 @@ function responsiveSkillsSection () {
         containersAdvantage.forEach((container)=> {
             container.classList.add('containerAdvantages-responsiveStyle-width720px')
         })
+
+        //Undo < 500
+        containersAdvantage.forEach((container)=> {
+            container.classList.remove('containerAdvantages-responsiveStyle-screen500px')
+        })
+
+        iconsAdvantageInfoBox.forEach((icon)=> {
+            icon.classList.remove('style-icons-infoBoxAdvantages-screen500px')
+        })
+
+        headersh3infoBox.forEach((h3)=> {
+            h3.classList.remove('style-h3-infoBoxAdvantages-screen500px')
+        })
+        //-------------------------------
+    }
+
+    if (screenWidth <= 500) {
+        containersAdvantage.forEach((container)=> {
+            container.classList.add('containerAdvantages-responsiveStyle-screen500px')
+        })
+
+        iconsAdvantageInfoBox.forEach((icon)=> {
+            icon.classList.add('style-icons-infoBoxAdvantages-screen500px')
+        })
+
+        headersh3infoBox.forEach((h3)=> {
+            h3.classList.add('style-h3-infoBoxAdvantages-screen500px')
+        })
+
     }
  }
 

@@ -823,6 +823,17 @@ footer {
     display: flex;
     justify-content: center;
 }
+.containerAdvantages-responsiveStyle-screen500px {
+    flex-direction: column;
+    height: 425px !important;
+}
+.style-icons-infoBoxAdvantages-screen500px {
+    margin: 35px 0 !important;
+}
+.style-h3-infoBoxAdvantages-screen500px {
+    text-align: center;
+    margin-bottom: 35px;
+}
 
 /* => Presentation Section */
 .style-containerGreeting-screen500px {
