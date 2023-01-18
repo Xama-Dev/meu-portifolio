@@ -646,10 +646,12 @@ function responsiveCarouselPortfolio () {
  };
 
  function responsiveFooter () {
-    let screenWidth = window.innerWidth
+    let screenWidth = document.body.clientWidth
+
     let gridFooter = document.querySelector('.grid-footer')
     let tagsFooter = document.querySelectorAll('.tags-footer')
     let containersFooter = document.querySelectorAll('.grid-footer > div')
+    let copyRigthText = document.querySelectorAll('.container-info-copyRigths p')
 
     if (screenWidth > 900) {
         
@@ -665,10 +667,17 @@ function responsiveCarouselPortfolio () {
         containersFooter.forEach((container)=> {
             container.classList.remove('margin-botton-containers-screen900px')
         })
+        //----------------------------
+
+        //Undo < 500px
+        copyRigthText.forEach((text)=> {
+            text.classList.remove('style-textCopyRigth-screen500px')
+        })
+        //-----------------------------
 
     }
     
-    if (screenWidth <= 900) {
+    if (screenWidth <= 900 && screenWidth > 500) {
         gridFooter.classList.add('flex-direction-column-screen-900px')
 
         tagsFooter.forEach((tag)=> {
@@ -678,6 +687,31 @@ function responsiveCarouselPortfolio () {
 
         containersFooter.forEach((container)=> {
             container.classList.add('margin-botton-containers-screen900px')
+        })
+
+        //Undo < 500px
+        copyRigthText.forEach((text)=> {
+            text.classList.remove('style-textCopyRigth-screen500px')
+        })
+        //-----------------------------
+    }
+
+    if (screenWidth <= 500 ) {
+
+        //Aplica estilo <= 900 && screenWidth > 500
+        gridFooter.classList.add('flex-direction-column-screen-900px')
+
+        tagsFooter.forEach((tag)=> {
+            tag.classList.remove('margin-bottom-tags-footer')
+            tag.classList.add('margin-bottom-tags-footer-screen900px')
+        })
+
+        containersFooter.forEach((container)=> {
+            container.classList.add('margin-botton-containers-screen900px')
+        })
+        //----------------------
+        copyRigthText.forEach((text)=> {
+            text.classList.add('style-textCopyRigth-screen500px')
         })
     }
  }

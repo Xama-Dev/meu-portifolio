@@ -979,3 +979,6 @@ resposivo foi necessario replicar a estilo nos elementos dentro do container */
 .margin-botton-containers-screen900px {
     margin-bottom: 65px;
 }
+.style-textCopyRigth-screen500px {
+    text-align: center;
+}
