@@ -524,7 +524,8 @@ function responsiveSkillsSection () {
  }
 
 function responsiveCarouselPortfolio () {
-    let screenWidth = window.innerWidth
+    let screenWidth = document.body.clientWidth
+
     let navCarouselPortfolio = document.getElementsByClassName('owl-nav')[1]
     let nextButton = document.getElementsByClassName('owl-next')[1]
     let prevButton = document.getElementsByClassName('owl-prev')[1]
@@ -635,6 +636,12 @@ function responsiveCarouselPortfolio () {
             infoProject.classList.add('infoProject-style-screen900px')
         })
  
+    }
+
+    if(screenWidth <= 500) {
+        descriptonProject.forEach((description)=> {
+            description.classList.remove('text-projectinfo-center')
+        })
     }
  };
 
